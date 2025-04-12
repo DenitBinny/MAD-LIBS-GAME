@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main{
+
+    public static void main(String [] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        String item;
+        double price;
+        int quantity;
+        boolean isCod;
+        char currency ='$';
+        double total;
+
+
+
+        System.out.println("..............THE TEXAS SHOPPING MALL.............");
+        System.out.println("\n");
+        System.out.println("Enter the item to buy");
+        item= scanner.nextLine();
+        System.out.println("Enter the price of the item ");
+        price=scanner.nextDouble();
+        System.out.println("Enter the quantity wished to buy");
+        quantity=scanner.nextInt();
+        total=price * quantity;
+        System.out.println("The total price is :"+currency+total);
+        System.out.println("\n");
+        System.out.println("Check if you want Cash On Delivery (True/false)");
+        isCod=scanner.nextBoolean();
+        if (isCod ){
+            System.out.println("Delivery possible");
+        }
+ else{
+            System.out.println("Delivery not possible");
+        }
+    }
+
+
+
+
+}
+
