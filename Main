@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+
+        Scanner scanner =new Scanner(System.in);
+
+        String object;
+        String noun;
+        String verb;
+        String animal;
+
+        System.out.println("Enter an object :");
+        object= scanner.nextLine();
+        System.out.println("Enter a noun :");
+        noun=scanner.nextLine();
+        System.out.println("Enter a verb of an action ending in -ing :");
+        verb=scanner.nextLine();
+        System.out.println("Enter an animal name :");
+        animal= scanner.nextLine();
+
+
+        System.out.println("......................THIS IS A MAD LIBS GAME..........................");
+        System.out.println("My teacher walked in with a "+ object + "on her head.");
+
+        System.out.println("She said it was part of a " + noun);
+
+        System.out.println("We all sat there "+verb + "not knowing what to say.");
+
+        System.out.println("Then the " +animal+ "under her desk shouted,");
+
+
+        scanner.close();
+
+
+
+
+    }
+}
